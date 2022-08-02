@@ -1,0 +1,154 @@
+<p>header</p>
+<p>sidebar</p>
+<div class="contents">
+  <div class="head">
+    <div>Configuration <fa-icon [icon]="faPen"></fa-icon></div>
+    <div class="head-end">
+      <input type="text" name="Search" class="search" placeholder="Search" />
+      <button class="today">
+        Today <fa-icon [icon]="faAngleDown"></fa-icon>
+      </button>
+    </div>
+  </div>
+  <div class="main">
+    <div class="item">
+      <div class="items client" (click)="goToClient()">
+        <fa-icon class="icon" [icon]="faIdCard"></fa-icon> Client
+      </div>
+      <div class="items appointment" (click)="goToAppointment()">
+        <fa-icon class="icon" [icon]="faCalendarDay"></fa-icon> Appointment
+      </div>
+      <div class="items email" (click)="goToEmail()">
+        <fa-icon class="icon" [icon]="faEnvelope"></fa-icon> Email
+      </div>
+      <div class="items">
+        <fa-icon class="icon" [icon]="faChalkboardTeacher"></fa-icon> Leads
+      </div>
+    </div>
+    <div class="form">
+      <div class="nav">
+        <div>Appointments</div>
+        <div class="nav-end">
+          <div class="nav-btn online">Online</div>
+          <div class="nav-btn">Clinic</div>
+          <div class="nav-btn">In person</div>
+          <div class="nav-btn">Home Visit</div>
+        </div>
+      </div>
+      <div class="center">
+        <div class="days">
+          <div class="day sunday"></div>
+          <div class="day monday"></div>
+          <div class="day"></div>
+          <div class="day"></div>
+          <div class="day"></div>
+          <div class="day"></div>
+          <div class="day sat"></div>
+        </div>
+        <div class="day-names">
+          <div class="day-name">
+            <span class="full-text">Sunday</span>
+            <span class="short-text">Sun</span>
+          </div>
+          <div class="day-name">
+            <span class="full-text">Monday</span>
+            <span class="short-text">Mon</span>
+          </div>
+          <div class="day-name">
+            <span class="full-text">Tuesday</span>
+            <span class="short-text">Tue</span>
+          </div>
+          <div class="day-name">
+            <span class="full-text">Wednesday</span>
+            <span class="short-text">Wed</span>
+          </div>
+          <div class="day-name">
+            <span class="full-text">Thursday</span>
+            <span class="short-text">Thu</span>
+          </div>
+          <div class="day-name">
+            <span class="full-text">Friday</span>
+            <span class="short-text">Fri</span>
+          </div>
+          <div class="day-name">
+            <span class="full-text">Saturday</span>
+            <span class="short-text">Sat</span>
+          </div>
+        </div>
+        <div class="boxes">
+          <input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          /><input type="time" name="box" class="box" /><input
+            type="time"
+            name="box"
+            class="box"
+          />
+        </div>
+      </div>
+      <div class="footer">
+        <div class="foot">
+          Slot Duration (mins)
+          <div class="num">30</div>
+        </div>
+        <div class="foot">
+          Appoinments in each Slot
+          <div class="num">4</div>
+        </div>
+        <div class="foot foot-last">
+          Advanced Appointments Days
+          <div class="num">7</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

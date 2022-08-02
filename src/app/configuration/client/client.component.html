@@ -1,0 +1,47 @@
+<p>header</p>
+<p>sidebar</p>
+<div class="contents">
+  <div class="head">
+    <div>Configuration <fa-icon [icon]="faPen"></fa-icon></div>
+    <div class="head-end">
+      <input type="text" name="Search" class="search" placeholder="Search" />
+      <button class="today">
+        Today <fa-icon [icon]="faAngleDown"></fa-icon>
+      </button>
+    </div>
+  </div>
+  <div class="main">
+    <div class="item">
+      <div class="items client" (click)="goToClient()">
+        <fa-icon class="icon" [icon]="faIdCard"></fa-icon> Client
+      </div>
+      <div class="items appointment" (click)="goToAppointment()">
+        <fa-icon class="icon" [icon]="faCalendarDay"></fa-icon> Appointment
+      </div>
+      <div class="items" (click)="goToEmail()">
+        <fa-icon class="icon" [icon]="faEnvelope"></fa-icon> Email
+      </div>
+      <div class="items">
+        <fa-icon class="icon" [icon]="faChalkboardTeacher"></fa-icon> Leads
+      </div>
+    </div>
+    <div class="form">
+      <input
+        type="text"
+        name="Name"
+        class="form-input"
+        placeholder="Organization Name"
+      />
+      <input
+        type="text"
+        name="Email"
+        class="form-input email"
+        placeholder="Email ID"
+      />
+      <div class="button">
+        <button class="save">Save</button>
+        <button class="cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
